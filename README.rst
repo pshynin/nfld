@@ -30,7 +30,7 @@ Setup Database::
 
     docker run --name pg_webapp -e POSTGRES_PASSWORD=secret -d -p 5400:5432 postgres
 
-    docker exec -it pg_webapp_linked_data bash
+    docker exec -it pg_webapp bash
 
     psql -U postgres
 

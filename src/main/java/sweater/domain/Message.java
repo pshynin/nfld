@@ -1,7 +1,5 @@
 package sweater.domain;
 
-import sweater.repos.MessageRepo;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
