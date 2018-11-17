@@ -1,4 +1,4 @@
-Simple dashboard that has the teams by division (NFC/AFC)
+Simple sweater that has the teams by division (NFC/AFC)
 
 :Web: http://localhost:8080/
 :Download: https://github.com/pshynin/nfld
@@ -26,5 +26,11 @@ Registration::
     "tos" : true/false,
     }
 
+Setup Database::
 
+    docker run --name pg_webapp -e POSTGRES_PASSWORD=secret -d -p 5400:5432 postgres
+
+    docker exec -it pg_webapp_linked_data bash
+
+    psql -U postgres
 
