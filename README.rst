@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 Simple dashboard that has the teams by division (NFC/AFC) \
 Technologies used: SpringMVC, SpringBoot, Bootstrap
+=======
+Simple sweater that has the teams by division (NFC/AFC)
+>>>>>>> sweater
 
 :Web: http://localhost:8080/
 :Download: https://github.com/pshynin/nfld
@@ -27,5 +31,15 @@ Registration::
     "tos" : true/false,
     }
 
+<<<<<<< HEAD
 
+=======
+Setup Database::
+
+    docker run --name pg_webapp -e POSTGRES_PASSWORD=secret -d -p 5400:5432 postgres
+
+    docker exec -it pg_webapp bash
+
+    psql -U postgres
+>>>>>>> sweater
 

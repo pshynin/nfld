@@ -1,4 +1,4 @@
-package com.teams.controller;
+package sweater.controller;
 
 import org.junit.Before;
 import org.junit.Test;
