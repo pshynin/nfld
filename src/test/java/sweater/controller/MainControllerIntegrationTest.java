@@ -20,7 +20,7 @@ import static org.junit.Assert.assertThat;
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class TeamTypeControllerIntegrationTest {
+public class MainControllerIntegrationTest {
 
     @LocalServerPort
     private int port;
@@ -39,6 +39,6 @@ public class TeamTypeControllerIntegrationTest {
     public void getHello() {
         ResponseEntity<String> response = template.getForEntity(base.toString(),
                 String.class);
-        assertThat(response.getBody(), equalTo("Greetings from Spring Boot!"));
+        assertThat(response.getBody(), equalTo("Hello, user"));
     }
 }
